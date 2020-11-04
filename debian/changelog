@@ -1,3 +1,9 @@
+xft-bgra (2.3.3-bgra) eoan; urgency=low
+
+  * BGRA patch applied 
+
+ -- Stefano Pacifici <stefano.pacifici@gmail.com>  Wed, 04 Nov 2020 15:11:00 +0100
+
 xft (2.3.3-0ubuntu1) eoan; urgency=medium
 
   * New upstream version
