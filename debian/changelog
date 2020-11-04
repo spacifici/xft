@@ -1,4 +1,4 @@
-xft-bgra (2.3.3-bgra) eoan; urgency=low
+xft-bgra (2.3.3-0ubuntu1) eoan; urgency=low
 
   * BGRA patch applied 
 

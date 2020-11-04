@@ -7,7 +7,7 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-PACKAGE = libxft2
+PACKAGE = libxft2-bgra
 
 %:
 	dh $@ --with quilt --builddirectory=build/

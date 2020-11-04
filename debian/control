@@ -1,4 +1,4 @@
-Source: xft
+Source: xft-bgra
 Section: devel
 Priority: optional
 Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
@@ -16,13 +16,16 @@ Standards-Version: 3.9.2
 Vcs-Git: https://salsa.debian.org/xorg-team/lib/xft
 Vcs-Browser: https://salsa.debian.org/xorg-team/lib/xft
 
-Package: libxft2
+Package: libxft2-bgra
 Section: libs
 Architecture: any
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
 Pre-Depends: ${misc:Pre-Depends}
+Provides: libxft2 (= 2.3.3-0ubuntu1)
+Replaces: libxft2 (= 2.3.3-0ubuntu1)
+Breaks: libxft2
 Multi-Arch: same
 Description: FreeType-based font drawing library for X
  Xft provides a client-side font API for X applications, making the FreeType
@@ -30,7 +33,7 @@ Description: FreeType-based font drawing library for X
  specification resolution.  Where available, the RENDER extension handles
  glyph drawing; otherwise, the core X protocol is used.
 
-Package: libxft2-udeb
+Package: libxft2-bgra-udeb
 XC-Package-Type: udeb
 Section: debian-installer
 Architecture: any
@@ -39,7 +42,7 @@ Depends:
 Description: FreeType-based font drawing library for X
  This is a udeb, or a microdeb, for the debian-installer.
 
-Package: libxft-dev
+Package: libxft-bgra-dev
 Section: libdevel
 Architecture: any
 Depends:
